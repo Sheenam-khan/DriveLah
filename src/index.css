@@ -165,6 +165,15 @@ a:hover {
   background-color: #ffffff;
 }
 
+.coming-soon {
+  transform: translate(-5px, -60px) scale(1);
+  background: #cccccc;
+  color: black;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 0px 10px;
+}
+
 h1 {
   font-size: 24px;
   color: #00796b;

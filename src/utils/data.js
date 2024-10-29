@@ -119,7 +119,7 @@ export const subscriptionPlansArr = [{
             id: 3,
             name: 'Between trip insurance (Coming soon)',
             selected: false,
-            enabled: true
+            enabled: false
         }
     ],
     addCardDetails: { cardNumber: '', cvc: '', expiry: '' }

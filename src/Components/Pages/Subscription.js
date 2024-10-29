@@ -52,7 +52,8 @@ const Dashboard = props => {
                 <h3>Select add-ons for your subscription</h3>
                 <div className="addons">
                   {subscriptionPlan?.addOnSubscription?.map((subscription, subscriptionIndex) =>
-                    <label className="addon" key={subscriptionIndex}>
+                  <div className="addon">
+                    <label key={subscriptionIndex}>
                       {subscription?.name}
                       <input type="radio" name="selected" className='right'
                         onChange={(e) => {
@@ -64,6 +65,8 @@ const Dashboard = props => {
                         defaultValue={subscription?.name==subscriptionPlan?.selected}
                       />
                     </label>
+                    {!subscription?.enabled && <div className='coming-soon'>coming soon</div>}
+                  </div>
                   )}
                 </div>
               </div>
