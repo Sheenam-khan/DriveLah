@@ -4,7 +4,6 @@ import { subscriptionPlansArr } from '../../utils/data';
 const Dashboard = props => {
   const subscriptionPlanData = JSON.parse(localStorage.getItem('subscription')) || {};
   const [subscriptionPlan, setSubscriptionPlan] = useState(subscriptionPlanData)
-  const [selectedAddon, setSelectedAddOn] = useState([])
   const [error ,setError]=useState( { cardNumber: false, cvc: false, expiry: false })
 
   useEffect(() => {
@@ -57,7 +56,6 @@ const Dashboard = props => {
                       {subscription?.name}
                       <input type="radio" name="selected" className='right'
                         onChange={(e) => {
-                          setSelectedAddOn({ ...subscription, selected: subscription?.name })
                           const subscriptionplan = { ...subscriptionPlan, selected: subscription?.name }
                           setSubscriptionPlan(subscriptionplan)
                         }}
@@ -69,7 +67,7 @@ const Dashboard = props => {
                   )}
                 </div>
               </div>
-              {selectedAddon?.selected && subscriptionPlan?.addCardDetails &&
+              {subscriptionPlan?.selected && subscriptionPlan?.addCardDetails &&
 
                 <div className='subscription-carddetails'>
                   <h3>Add card details <i className='fa fa-credit-card' />
