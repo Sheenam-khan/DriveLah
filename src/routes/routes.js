@@ -73,7 +73,7 @@ const routes = [
         path: '/',
         component: loadable(() => import('../Components/Pages/Subscription')),
         exact: true,
-        completed:false
+        completed:true
     },
     {
         path: '/location',
@@ -139,7 +139,7 @@ const routes = [
         name:'Subscription',
         component: loadable(() => import('../Components/Pages/Subscription')),
         exact: true,
-        completed:false
+        completed:true
 
     },
     {
@@ -162,7 +162,8 @@ const routes = [
         path: '*',
         component: loadable(() => import('../Components/PageNotFound/index')),
         exact: false,
-        completed:false
+        completed:false,
+        disabled:true
     },
 
 

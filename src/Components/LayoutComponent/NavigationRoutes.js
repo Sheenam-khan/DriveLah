@@ -18,7 +18,6 @@ const NavigationRoutes = props => {
                             }
                             props.onClose && props.onClose()
                         }} disabled={!item.completed}>
-                        {/* <img src={item.imgSrc} alt="" className="btn" /> */}
                         <span className="nav-title" disabled={!item.completed}>{item.name}</span>
                         {item?.completed && <i className='fa fa-check-circle f-20' />}
                     </Link>
