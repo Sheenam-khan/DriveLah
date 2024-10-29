@@ -39,13 +39,16 @@ export const subscriptionPlansArr = [{
     amount: 'Free',
     selected: false,
     planDetails: [{
-        name: 'Bring your own GPS'
+        name: 'Bring your own GPS',
+        icon: 'fa fa-map-marker'
     },
     {
-        name: 'Mileage reporting to be done by you'
+        name: 'Mileage reporting to be done by you',
+        icon: 'fa fa-tachometer'
     },
     {
-        name: 'In-person key handover to guests'
+        name: 'In-person key handover to guests',
+        icon: 'fa fa-lock'
     }],
     addOnSubscription: [],
     addCardDetails: { cardNumber: '', cvc: '', expiry: '' }
@@ -56,13 +59,16 @@ export const subscriptionPlansArr = [{
     amount: '$10/month',
     selected: false,
     planDetails: [{
-        name: 'Primary GPS included'
+        name: 'Primary GPS included',
+        icon: 'fa fa-map-marker'
     },
     {
-        name: 'Automated mileage calculations'
+        name: 'Automated mileage calculations',
+        icon: 'fa fa-tachometer'
     },
     {
-        name: 'In-person key handover to guests'
+        name: 'In-person key handover to guests',
+        icon: 'fa fa-lock'
     }],
     addOnSubscription: [
         {
@@ -89,13 +95,18 @@ export const subscriptionPlansArr = [{
     amount: '$30/month',
     selected: false,
     planDetails: [{
-        name: 'Keyless access technology'
+        name: 'Keyless access technology',
+        icon: 'fa fa-map-marker'
+
     },
     {
-        name: 'Automated mileage calculations'
+        name: 'Automated mileage calculations',
+        icon: 'fa fa-tachometer'
     },
     {
-        name: 'Remote handover to guests'
+        name: 'Remote handover to guests',
+        icon: 'fa fa-lock'
+
     }],
     addOnSubscription: [
         {
@@ -114,7 +125,5 @@ export const subscriptionPlansArr = [{
     addCardDetails: { cardNumber: '', cvc: '', expiry: '' }
 
 },
-
-
 ]
 

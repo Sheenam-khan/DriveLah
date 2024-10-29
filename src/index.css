@@ -152,11 +152,13 @@ a:hover {
 .active {
   border-left: 4px solid #00796b;
 }
+
 .logo {
   text-align: center;
   color: #f7f7f7;
   font-weight: bold;
 }
+
 .main-content {
   width: 80%;
   padding: 15px;
@@ -199,6 +201,14 @@ h3 {
   cursor: pointer;
 }
 
+.plan li {
+  list-style: none;
+}
+
+.plan i {
+  color: #00796b;
+}
+
 .selected-plan {
   border: 2px solid #00796b;
 }
@@ -237,9 +247,12 @@ h3 {
 .short-input {
   width: calc(50% - 10px);
 }
-.cvv ,.expiry ,.cardn-umber{
+
+.cvv,
+.expiry,
+.cardn-umber {
   border-left: none;
-border-right:none ;
+  border-right: none;
 }
 
 .next-button {
@@ -284,9 +297,10 @@ border-right:none ;
   float: left;
 }
 
-.error{
-  color:red;
+.error {
+  color: red;
 }
+
 .device {
   margin-bottom: 20px;
   padding: 15px;
@@ -306,10 +320,13 @@ label {
   display: block;
   margin: 10px 0 5px;
 }
+
 *:focus {
   outline: none;
 }
-input[type="text"],input[type="month"] {
+
+input[type="text"],
+input[type="month"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -387,9 +404,11 @@ input:checked+.slider:before {
 .navbar ul.mobilemenu {
   display: none;
 }
-.uploadfile{
+
+.uploadfile {
   /* margin-right: 230px; */
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
 
@@ -397,9 +416,11 @@ input:checked+.slider:before {
   .serial {
     flex-direction: column;
   }
-  .uploadfile{
+
+  .uploadfile {
     /* margin-right: 10px; */
   }
+
   .navbar {
     text-align: center;
   }

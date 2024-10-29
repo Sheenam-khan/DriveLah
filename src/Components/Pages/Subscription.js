@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
-import { subscriptionPlansArr } from '../../utils/pages';
+import { subscriptionPlansArr } from '../../utils/data';
 
 const Dashboard = props => {
   const subscriptionPlanData = JSON.parse(localStorage.getItem('subscription')) || {};
@@ -39,7 +39,7 @@ const Dashboard = props => {
                   <h3>{item.planName}</h3>
                   <ul>
                     {item.planDetails.map(((plan, planIndex) => (
-                      <li key={planIndex}>{plan.name}</li>
+                      <li key={planIndex}><span><i className={plan?.icon} /> {plan?.name} </span></li>
                     )))}
                   </ul>
                   <p className="price">{item.amount}</p>

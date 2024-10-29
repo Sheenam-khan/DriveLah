@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
-import { devicesArr } from '../../utils/pages';
+import { devicesArr } from '../../utils/data';
 
 const Device = props => {
   const deviceAr = JSON.parse(localStorage.getItem('devices')) || devicesArr;
