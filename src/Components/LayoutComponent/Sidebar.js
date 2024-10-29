@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationRoutes from './NavigationRoutes'
+import NavigationRoutes from './Navbar'
 const Sidebar = (props) => {
   return (
     <aside className='sidebar sidebar-offcanvas menu'>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import routes from '../../routes/routes';
-const NavigationRoutes = props => {
+const Navbar = props => {
     const activeroute = localStorage.getItem('activeRoute');
     const [activeRoute, setActiveRoute] = useState(activeroute);
     return (
@@ -27,4 +27,4 @@ const NavigationRoutes = props => {
     )
 }
 
-export default NavigationRoutes
+export default Navbar
