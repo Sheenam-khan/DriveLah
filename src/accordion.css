@@ -1,0 +1,91 @@
+.container{
+    max-width: 650px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.wrapper{
+    border-bottom: 1px solid black;
+    overflow: hidden;
+  }
+  .wrapper .question-container{
+    width: 100%;
+    text-align: left;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .question-container.active{
+    color: #1db954;
+    background-image: linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent);
+  }
+  .wrapper .question-container:hover{
+    background-image: linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent);
+  }
+  .wrapper .arrow{
+    font-size: 2rem;
+    transition: .5s ease-in-out;
+  }
+  .arrow.active{
+    rotate: 180deg;
+    color: #1db954;
+  }
+  .wrapper .answer-container{
+    padding: 0 1rem;
+    transition: height .7s ease-in-out;
+  }
+  .wrapper .answer-content{
+    padding: 1rem 0;
+    font-size: 20px;
+    font-style: italic;
+  }
+  :root {
+    --color-background: #F8F0E3;
+    --color-background-secondary: #E3EBF8;
+    --color-background-third: #E3EBF8;
+    --color-text: #000000;
+    --color-text-alternate: #757575;
+    --theme-color-strong: #FFFFFF;
+    --color-background-highlight: #6F7378;
+    --color-background-opaque: rgba(248, 240, 227, 0.75);
+    --color-link: #0000EE;
+    --color-button: #FFFFFF;
+    --okay-color: #F9E076;
+  }
+  [data-theme='dark'] {
+    --color-background: #121212;
+    --color-background-secondary: #181818;
+    --color-background-third: #caced3;
+    --color-text: #FFFFFF;
+    --color-text-alternate: #FFFFFF;
+    --theme-color-strong: #000000;
+    --color-background-highlight: #e6e6e6;
+    --color-link: #A5C9FF;
+    --color-button: #121212;
+    --okay-color: #d3c404;
+  }
+  [data-theme='light'] {
+    --color-background: #FFFFFF;
+    --color-background-secondary: #ffffff;
+    --color-background-third: #caced3;
+    --color-text: #000000;
+    --color-text-alternate: #FFFFFF;
+    --theme-color-strong: #000000;
+    --color-background-highlight: #e6e6e6;
+    --color-link: #A5C9FF;
+    --color-button: #121212;
+    --okay-color: #d3c404;
+  }
+  body{
+    background: var(--color-background);
+    color: var(--color-text)
+  }

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { withRouter } from 'react-router-dom'
+// import { withRouter } from 'react-router-dom'
 
 const Default=(props)=>{
     console.log("porps",props)
@@ -40,4 +40,4 @@ const Default=(props)=>{
   )
 }
 
-export default withRouter(Default)
+export default Default

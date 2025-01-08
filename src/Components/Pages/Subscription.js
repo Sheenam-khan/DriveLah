@@ -110,7 +110,7 @@ const Dashboard = props => {
                     {error?.cvc &&<span className='error'>Invalid CVC !</span>}
                        </div>
                   </div>
-                  <p className="footer">You will not be charged right now. Subscription will only start once your listing is published and live.</p>
+                  <p className="atmcard-footer">You will not be charged right now. Subscription will only start once your listing is published and live.</p>
                 </div>
               }
             </>

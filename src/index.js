@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Router from './routes/index'
+// import './accordion.css';
+import './index.css'
+// import Router from './routes/index'
+import App from './App';
+// import App from './NewTask.tsx';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router />
+    {/* <Router /> */}
+<App/>
+
   </React.StrictMode>
 );
